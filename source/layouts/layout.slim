@@ -1,0 +1,71 @@
+- if wp? == true
+  |
+    <?php
+    /*
+  = "Template Name: #{page_classes}"
+  |
+    */
+    ?>
+doctype html
+html lang="ja"
+  head
+    meta charset="utf-8"
+    title <?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?>
+
+    link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    link rel="stylesheet" href="#{wp_dir}css/style.css"
+    script src="#{wp_dir}lib/jquery/js/jquery.min.js"
+  body
+    .header
+      .container
+        .row
+          h1.logo
+            a href="/"
+              - if wp? == true
+                |<?php bloginfo('name') ?>
+              - else
+                |サイトタイトル
+          - if wp? == true
+            |<?php wp_nav_menu( array( 'theme_location' => 'sample_nav' ) ); ?>
+          - else
+            .menu-sample_nav-container
+              ul#menu-sample_nav.menu
+                li.menu-item
+                  a href="/" Home
+                li.menu-item
+                  a href="page.html" 固定ページ
+    .content
+      .container
+        .row
+          .content__main
+            == yield
+          .content__side
+            - if wp? == true
+              |
+                <?php if ( is_active_sidebar( 'sample_sidebar' ) ) : 
+                  dynamic_sidebar( 'sample_sidebar' );
+                else: ?>
+                  <div class="widget">
+                    <h2>No Widget</h2>
+                    <p>ウィジットは設定されていません。</p>
+                  </div>
+                <?php
+                endif;
+                ?>
+            - else
+              .widget
+                h2.widgettitle サンプルサイドバー
+                ul
+                  li
+                    a href="" リンク
+                  li
+                    a href="" リンク
+                h2.widgettitle サンプルサイドバー2
+                ul
+                  li
+                    a href="" リンク
+                  li
+                    a href="" リンク
+    .footer
+      .container
+        address Copyright <?php bloginfo( 'name' ); ?> 2014. All Rights Reserved.
