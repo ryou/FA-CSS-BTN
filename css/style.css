@@ -1,0 +1,162 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+  font-size: 1.4rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.fa-css-btn {
+  margin-top: 100px;
+  width: 699px;
+  display: block;
+}
+.fa-css-btn:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.fa-css-btn__single {
+  width: 233px;
+  float: left;
+  display: block;
+}
+.fa-css-btn__single:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.fa-css-btn__bg {
+  position: absolute;
+  z-index: -1;
+  width: 233px;
+  height: 100px;
+  overflow: hidden;
+}
+.fa-css-btn__bg:after {
+  position: absolute;
+  left: 50%;
+  top: -40%;
+  color: white;
+  font-size: 120px;
+  font-family: FontAwesome;
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.fa-css-btn__bg--tw {
+  background-color: #2980b9;
+}
+.fa-css-btn__bg--tw:after {
+  content: "";
+}
+.fa-css-btn__bg--fb {
+  background-color: #2c3e50;
+}
+.fa-css-btn__bg--fb:after {
+  content: "";
+}
+.fa-css-btn__bg--gh {
+  background-color: #16a085;
+}
+.fa-css-btn__bg--gh:after {
+  content: "";
+}
+.fa-css-btn__text {
+  color: white;
+  padding: 20px;
+}
+.fa-css-btn__text-en {
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.fa-css-btn__text-ja {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
