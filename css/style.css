@@ -126,8 +126,8 @@ a {
   -ms-transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+  opacity: 0.25;
 }
 .fa-css-btn__bg--tw {
   background-color: #2980b9;
